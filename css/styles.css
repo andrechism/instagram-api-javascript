@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+.header-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.header-input input {
+  border: 2px solid yellow;
+  background-color: aqua;
+  border-radius: 15px;
+  height: 50px;
+  width: 300px;
+  padding-left: 5%;
+}
+
+.cards-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 24%;
+  margin-top: 15px;
+  padding: 1%;
+  background-color: rgb(187, 187, 187);
+  border-radius: 5px;
+}
+
+.card header, .card section, .card footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    width: 49%;;
+  }
+}
+
+@media (max-width: 580px) {
+  .card {
+    width: 90%;
+  }
+}
